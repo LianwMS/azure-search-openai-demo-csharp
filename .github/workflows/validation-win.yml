@@ -28,8 +28,7 @@ jobs:
             npm install
           fi
           docker version
-          cd /
-          dir
+          where dockercli.exe
           dockercli.exe -SwitchLinuxEngine
         shell: bash
 
