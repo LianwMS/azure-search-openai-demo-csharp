@@ -38,9 +38,10 @@ jobs:
           AZURE_ENV_NAME: ${{ vars.AZURE_ENV_NAME }}
           AZURE_LOCATION: ${{ vars.AZURE_LOCATION }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: "sample-key"
         with:
-          useDevContainer: false
-          securityAction: false
+          useDevContainer: "false"
+          securityAction: "false"
 
       - name: print result
         run: cat ${{ steps.validation.outputs.resultFile }}
