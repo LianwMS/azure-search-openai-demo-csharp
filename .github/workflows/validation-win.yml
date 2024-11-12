@@ -28,6 +28,9 @@ jobs:
             npm install
           fi
           docker version
+          cd "C:\Program Files\Docker\Docker"
+          dir
+          dockercli.exe -SwitchLinuxEngine
         shell: bash
 
       - uses: microsoft/template-validation-action@v0.3.3
